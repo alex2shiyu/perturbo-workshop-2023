@@ -1,4 +1,4 @@
-# Hands-on Session 2- Generating epr.h5
+# Hands-on 2- Generating epr.h5
 
 [TOC]
 
