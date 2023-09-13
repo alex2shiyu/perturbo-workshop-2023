@@ -5,7 +5,7 @@
 
 ## Introduction
 This handout mainly aims at showing how to generate epr.h5 file (**in the most recent released Perturbo version, the name of ~~epwan.h5~~ has been changed to epr.h5**), which is the most important input file for various following Perturbo calculations in hands-on 3&4. From the flowchart below, you can see the data flow,
-![](https://hackmd.io/_uploads/HJFzLUC0n.png)
+![](./pic/flowchart.png)
 
 
 
@@ -314,10 +314,10 @@ After finishing nscf, phonon and mlwf, we can perform qe2pert to integrate them 
 After successfully installing it, just open it and then drug the epr.h5 file to the left panel of HDF5VIEW. Then you can see somthing like below.
 
 * general info.
-    ![](https://hackmd.io/_uploads/SJQw3W6Ch.png)
+    ![](./pic/hdfview_1.png)
 
 * basic data.
-    ![](https://hackmd.io/_uploads/H1Uu3baCh.png)
+    ![](./pic/hdfview_2.png)
 Now you have an overall idea of the whole epr.h5 file.
 For further processing with HDFVIEW, please refer to the [user guide](https://www.hdfgroup.org/downloads/hdfview/)
 
@@ -446,7 +446,7 @@ si_bands.kpt.add_labels(ppy.lattice.points_fcc)
 si_bands.plot_bands(ax)
 plt.show()
 ```
-![](https://hackmd.io/_uploads/SJCUywpA2.png)
+![](./pic/si_band.png)
 
 
 ### phonon dispersion
@@ -495,7 +495,7 @@ si_phdisp.qpt.add_labels(ppy.lattice.points_fcc)
 
 si_phdisp.plot_phdisp(ax)
 ```
-![](https://hackmd.io/_uploads/HJWxmwT02.png)
+![](./pic/si_phdisp.png)
 
 
 ### e-ph matrix 
@@ -544,7 +544,7 @@ fig, ax  = plt.subplots()
 si_ephmat.plot_ephmat(ax)
 plt.show()
 ```
-![](https://hackmd.io/_uploads/SysERPa0n.png)
+![](./pic/si_ephmat.png)
 
 
 * visualize deformation potential (using perturbopy)
@@ -562,7 +562,7 @@ fig, ax  = plt.subplots()
 si_ephmat.plot_defpot(ax)
 plt.show()
 ```
-![](https://hackmd.io/_uploads/HyvS0wpRh.png)
+![](./pic/si_defpot.png)
 
 
 * visualize the phonon dispersion  (using perturbopy)
@@ -579,7 +579,7 @@ fig, ax  = plt.subplots()
 si_ephmat.plot_phdisp(ax)
 plt.show()
 ```
-![](https://hackmd.io/_uploads/HyzU0vpR2.png)
+![](./pic/si_ephmat_phonon.png)
 
 
 
