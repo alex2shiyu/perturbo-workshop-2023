@@ -444,7 +444,12 @@ si_bands = ppy.Bands.from_yaml('si_bands.yml')
 si_bands.kpt.add_labels(ppy.lattice.points_fcc)
 
 si_bands.plot_bands(ax)
-plt.show()
+#plt.show()
+plt.savefig('si_band.png')
+```
+see it in your finder:
+```bash
+>> open -a Finder .
 ```
 ![](./pic/si_band.png)
 
@@ -494,6 +499,12 @@ plt.rcParams.update(ppy.plot_tools.plotparams)
 si_phdisp.qpt.add_labels(ppy.lattice.points_fcc)
 
 si_phdisp.plot_phdisp(ax)
+#plt.show()
+plt.savefig('si_phdisp.png')
+```
+see it in your finder:
+```bash
+>> open -a Finder .
 ```
 ![](./pic/si_phdisp.png)
 
@@ -542,7 +553,12 @@ si_ephmat.qpt.add_labels(ppy.lattice.points_fcc)
 
 fig, ax  = plt.subplots()
 si_ephmat.plot_ephmat(ax)
-plt.show()
+#plt.show()
+plt.savefig('si_ephmat.png')
+```
+see it in your finder:
+```bash
+>> open -a Finder .
 ```
 ![](./pic/si_ephmat.png)
 
@@ -560,7 +576,12 @@ si_ephmat.qpt.add_labels(ppy.lattice.points_fcc)
 
 fig, ax  = plt.subplots()
 si_ephmat.plot_defpot(ax)
-plt.show()
+#plt.show()
+plt.savefig('si_defpot.png')
+```
+see it in your finder:
+```bash
+>> open -a Finder .
 ```
 ![](./pic/si_defpot.png)
 
@@ -577,9 +598,14 @@ si_ephmat.qpt.add_labels(ppy.lattice.points_fcc)
 
 fig, ax  = plt.subplots()
 si_ephmat.plot_phdisp(ax)
-plt.show()
+#plt.show()
+plt.savefig('si_ephmat_phdisp.png')
 ```
-![](./pic/si_ephmat_phonon.png)
+see it in your finder:
+```bash
+>> open -a Finder .
+```
+![](./pic/si_ephmat_phdisp.png)
 
 
 

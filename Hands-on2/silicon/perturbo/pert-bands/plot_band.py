@@ -11,4 +11,4 @@ si_bands.kpt.add_labels(ppy.lattice.points_fcc)
 
 si_bands.plot_bands(ax)
 #plt.show()
-plt.savefig('demo_si_band.png')
+plt.savefig('si_band.png')
